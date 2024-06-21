@@ -1,27 +1,60 @@
 # Max Dowdall - AS91900
 ***Conducting a Critical Inquiry to Propose an Electronics Outcome***
 
-## Project Focus
+## 1. Project Focus
 ### Problem Brainstorming:
 - Remembering and creating secure passwords
 - Losing items
 - Phones being boring and social media mindless
 
-## Inquiry Questions
+## 2. Inquiry Questions
 - What are common games people emulate? What controls will my device need? How powerful will it need to be?
 - What connections/ports will I need to add to make this viable for anyone to use and charge? Will it need modern connections like bluetooth, USB-C, etc?
 - How will the device last a day of use? What size battery will it need? Will it need a power-saving mode?
 - How will the device be durable enough for every day use? What materials will it be made of? Will it need waterproofing?
 - How will it be comfortable to use? How should the buttons be layed out? What should the screen be like to avoid eye-strain.
 
-## Milestones
+## 3. Milestones
 |Target|Date|
 |-|-|
 |Design the PCB||
 
-## Research
+## 4. Research
 The world of handheld devices has now been completely dominated by the smartphone, there are modern devices designed for playing games such as the Nintendo Switch, but this is far too large and pricey for what I want to create. 
 
-Looking back to the early 2000s there are some great examples of pocket handhelds such as the Nintendo Gameboy Advance, the Sega Game Gear, the Nintendo DS, the Playstation Portable and many others. The one that stands out to me the most is the Nintendo Gameboy Advance SP.
+Looking back to the early 2000s there are some great examples of pocket handhelds such as:
 
-<img src="gba_sp.jpg" alt="drawing" width="200"/>
+|||
+|-|-|
+|Nintendo Gameboy Advance|<img src="gba.jpg" alt="gba" width="200"/>|
+|Sega Game Gear|<img src="sega_game_gear.jpg" alt="sega game gear" width="200"/>|
+|Nintendo DS|<img src="ds.jpg" alt="ds" width="200"/>|
+And many others. The one that stands out to me the most is the Nintendo Gameboy Advance SP.
+
+<img src="gba_sp.jpg" alt="gba sp" width="200"/>
+
+It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
+
+## 5. Research Analysis  
+### The Brain
+For the brain of the computer I will need a small singleboard computer. Designing an entire motherboard is out of the scope of this project. There are many available options such as:
+
+|Name|Picture|Pros|Cons|
+|-|-|-|-|
+|Orange Pi 5 Plus|<img src="orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Very Fast</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large the embed</li></ul>|
+|Asus Tinker Board S R2.0|<img src="asus_tinker.jpg" alt="gba" width="200"/>|
+|Odroid N2|<img src="odroid.jpg" alt="gba" width="200"/>|
+|Raspberry Pi 4|<img src="pi_4.jpg" alt="gba" width="200"/>|
+|Pi Zero 2 W|<img src="pi_zero_2.jpg" alt="gba" width="200"/>|
+|Arduino Pro Portena X8|<img src="arduino_portena.jpg" alt="gba" width="200"/>|
+
+
+## 10. Proposed Solution
+As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP.
+It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
+The brains behind the device will be a Raspberry Pi Zero 2 W.
+
+This device is a tiny and low cost single board computer, designed to run GNU/Linux, which is my preferred operating system, this one runs a specific distro called Raspian (I refuse to use the rebranded name Raspberry Pi OS). 
+It boasts an impressive quad-core 1GHz CPU and 512MB of SDRAM. That’s otherworldly from the original Nintendo GBA SP’s single core 16MHz and 384Kb of total ram. This will allow a smooth and fast experience playing retro handheld games, as well as any application I implement.
+
+## 
