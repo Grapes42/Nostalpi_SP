@@ -37,17 +37,26 @@ It features a compact pocket design, which then unfolds into a comfortable handh
 
 ## 5. Research Analysis  
 ### The Brain
-For the brain of the computer I will need a small singleboard computer. Designing an entire motherboard is out of the scope of this project. There are many available options such as:
+For the brain of the computer I will need a small singleboard computer as designing an entire motherboard is out of the scope of this project. There are many available options such as:
 
 |Name|Picture|Pros|Cons|
 |-|-|-|-|
-|Orange Pi 5 Plus|<img src="orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Very Fast</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large the embed</li></ul>|
-|Asus Tinker Board S R2.0|<img src="asus_tinker.jpg" alt="gba" width="200"/>|
-|Odroid N2|<img src="odroid.jpg" alt="gba" width="200"/>|
-|Raspberry Pi 4|<img src="pi_4.jpg" alt="gba" width="200"/>|
-|Pi Zero 2 W|<img src="pi_zero_2.jpg" alt="gba" width="200"/>|
-|Arduino Pro Portena X8|<img src="arduino_portena.jpg" alt="gba" width="200"/>|
+|Orange Pi 5 Plus|<img src="orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>2.4GHz 8-core CPU with 16GB ram (Very fast)</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large to embed</li><li>Will need cooling</li></ul>|[//]: ----------
+|Asus Tinker Board S R2.0|<img src="asus_tinker.jpg" alt="gba" width="200"/>|a|a| [//]:----------
+|Odroid N2|<img src="odroid.jpg" alt="gba" width="200"/>|a|a|[//]: ----------
+|Raspberry Pi 4|<img src="pi_4.jpg" alt="gba" width="200"/>|a|a| [//]:----------
+|Pi Zero|<img src="pi_zero.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Super cheap</li><li>Very small</li></ul>|<ul><li>Single core 1GHz CPU with 512MB ram (too slow for a comfortable emulating experience)</li></ul>| [//]:----------
+|Pi Zero 2 W|<img src="pi_zero_2.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Very cheap (slightly more expensive than the Pi Zero)</li><li>Very small (Same size as the Pi Zero)</li></ul>|<ul><li>Lack of inbuilt ports</li></ul>| [//]:----------
+|Arduino Pro Portena X8|<img src="arduino_portena.jpg" alt="gba" width="200"/>|a|a| [//]:----------
 
+### The Power Supply
+I researched some mobile power options for the Pi Zero:
+
+|Name|Picture|Pros|Cons|
+|-|-|-|-|
+|Juicebox Zero|<img src="juicebox.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features built in</li></ul>|<ul><li>Expensive</li><li>Not as compact as other options</li><li>Fixed shape for all parts, so customisation is limited</li></ul>|[//]:----------
+|Pisugar 3|<img src="pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
+|PowerBoost 1000C|<img src="powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 
 ## 10. Proposed Solution
 As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP.
