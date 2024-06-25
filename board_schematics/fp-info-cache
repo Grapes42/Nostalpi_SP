@@ -1,4 +1,4 @@
-23621857032925164
+23618421305373715
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96275,26 +96275,12 @@ pi_zero_pcb_pins
 
 
 0
-44
-44
-pass_man_footprints
-I2C_LCD
+42
+42
+gamepi_sp
+powerboost_1000C_pins
 
 
 0
-4
-4
-pass_man_footprints
-pi_USB_connector
-
-
-0
-4
-4
-pass_man_footprints
-pi_zero_pcb_pins
-
-
-0
-44
-44
+6
+6
