@@ -3323,6 +3323,76 @@
 		(uuid "fef0927f-8252-49de-a2c3-c1d84447fcd4")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 160.02 121.92 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06244e3b-fa87-4ace-bf54-2d85618cef22")
+		(property "Reference" "R9"
+			(at 158.75 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 120.142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfde0932-d379-4b27-aca9-a4d9b1a2b318")
+		)
+		(pin "1"
+			(uuid "51f2e0c8-4422-4f6d-95c2-f5bfce91fb18")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 173.99 106.68 0)
 		(unit 1)
@@ -3416,7 +3486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 139.7 74.168 90)
 			(effects
 				(font
@@ -3595,6 +3665,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 160.02 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bedc1e9-ab56-4bd3-88e9-1af4fe292971")
+		(property "Reference" "R10"
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 125.222 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dbeffadf-eb54-42ca-a001-90aeca332538")
+		)
+		(pin "1"
+			(uuid "77809bbc-3491-40bd-adbf-9219f313f737")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 162.56 60.96 0)
 		(unit 1)
@@ -3622,7 +3762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 162.56 60.96 0)
 			(effects
 				(font
@@ -3752,15 +3892,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 132.08 270)
+		(at 160.02 106.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3287205a-033f-4963-bb53-e27a735187b5")
-		(property "Reference" "R13"
-			(at 158.75 129.54 0)
+		(uuid "2d986e80-c1ca-4ed0-aa4d-4f69581b20e7")
+		(property "Reference" "R6"
+			(at 158.75 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +3910,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 162.306 132.08 90)
+			(at 162.306 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,8 +3918,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 130.302 90)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 104.902 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +3928,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 132.08 0)
+			(at 160.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,7 +3937,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 132.08 0)
+			(at 160.02 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3806,155 +3946,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ee8875ac-0892-465c-abb6-23ad1c13d85c")
+			(uuid "074f516e-35e4-4884-a4d2-c7d665f34b2b")
 		)
 		(pin "1"
-			(uuid "502cbde4-2908-4767-80b3-67511aeb9322")
+			(uuid "492ab480-75ae-4dd7-840d-4cb66a8ea7eb")
 		)
 		(instances
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "455dd00c-c33b-4302-a8f0-6e3844d59953")
-		(property "Reference" "R7"
-			(at 158.75 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 94.742 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "44cb0c0e-c7d9-442d-8e3f-22a5faef531e")
-		)
-		(pin "1"
-			(uuid "435e48fc-6281-4944-9864-fc72415cc28c")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 116.84 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48a2ed3b-d8f7-4b59-872f-6c13496ef1e0")
-		(property "Reference" "R10"
-			(at 158.75 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 115.062 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3c2033b2-60e5-491f-a315-57fa01d56e24")
-		)
-		(pin "1"
-			(uuid "74c204b3-0657-485c-92fc-f47de9801897")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R10")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4030,76 +4030,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 121.92 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4d388b6f-e043-4899-afed-2e4ab25df222")
-		(property "Reference" "R9"
-			(at 158.75 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 120.142 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5cc9ccec-22e8-4885-9a96-d3ea2a6a4117")
-		)
-		(pin "1"
-			(uuid "38c6b192-0faa-4e94-95ae-29341f5d32d1")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 139.7 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4124,7 +4054,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 139.7 69.088 90)
 			(effects
 				(font
@@ -4168,15 +4098,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 106.68 270)
+		(at 160.02 116.84 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "77572c0d-867b-4511-9285-2fa3de0c5e4e")
-		(property "Reference" "R5"
-			(at 158.75 104.14 0)
+		(uuid "6827f378-eec2-478e-b95b-8e6598a87f9d")
+		(property "Reference" "R8"
+			(at 158.75 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4186,7 +4116,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 162.306 106.68 90)
+			(at 162.306 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4194,8 +4124,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 104.902 90)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 115.062 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4204,7 +4134,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 106.68 0)
+			(at 160.02 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4213,7 +4143,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 106.68 0)
+			(at 160.02 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4222,15 +4152,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "33716b03-cecc-4dcf-9719-ed58087c2dc4")
+			(uuid "42602bb5-61a2-41f9-8a5f-924303b17d4b")
 		)
 		(pin "1"
-			(uuid "9085add0-163c-4344-bd93-bbfaf8f8563f")
+			(uuid "3a0cfdb8-7a0f-4027-b37d-7a805f827e9b")
 		)
 		(instances
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4306,14 +4236,84 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 160.02 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9473704b-e8bc-45d3-8987-800eb497517f")
+		(property "Reference" "R14"
+			(at 158.75 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 140.462 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "867dc46c-8455-4f18-a868-ffd525b89124")
+		)
+		(pin "1"
+			(uuid "f4492b9c-21f1-430f-b6d4-cefadbb00928")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 160.02 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7d5d8cae-445e-4a49-956c-b97c53b3c856")
-		(property "Reference" "R6"
+		(uuid "948a8e17-cd32-42a8-b4aa-4fa4d6a0fab6")
+		(property "Reference" "R5"
 			(at 158.75 99.06 0)
 			(effects
 				(font
@@ -4332,7 +4332,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 160.02 99.822 90)
 			(effects
 				(font
@@ -4360,15 +4360,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "f40aea91-5b8a-4bb9-b395-0c5619c99a59")
+			(uuid "8749cc73-c838-4155-8f37-a97902c192b0")
 		)
 		(pin "1"
-			(uuid "5b945257-122d-4bc0-84da-8c5d8de52df2")
+			(uuid "a57c307c-bf8d-46d4-967f-faa0e7885793")
 		)
 		(instances
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4437,6 +4437,76 @@
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96e823f7-2ff9-4007-904b-4c0a89e73dee")
+		(property "Reference" "R7"
+			(at 158.75 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba660aa0-5083-4866-9798-efd807c12594")
+		)
+		(pin "1"
+			(uuid "c02748e6-c1c3-4796-aa21-a88235d94a7a")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4701,6 +4771,76 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 160.02 132.08 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4f83654-c058-4d9c-aae0-11510a8d02b5")
+		(property "Reference" "R11"
+			(at 158.75 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 130.302 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "383c4560-abd9-4216-827a-34cf1b4ab713")
+		)
+		(pin "1"
+			(uuid "e712076b-2be5-4349-a44b-3d27c971536c")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 175.26 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4725,7 +4865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 175.26 67.818 90)
 			(effects
 				(font
@@ -4836,76 +4976,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 160.02 127 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bb7551f4-aad6-47f6-8a0d-b2bffeffff33")
-		(property "Reference" "R8"
-			(at 158.75 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 125.222 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "59184ed2-8647-4536-a6d9-0426810ddcd0")
-		)
-		(pin "1"
-			(uuid "a3a98597-8794-4e7f-a4af-635cff4b2b3a")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 173.99 121.92 0)
 		(unit 1)
@@ -5001,7 +5071,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 160.02 89.662 90)
 			(effects
 				(font
@@ -5038,76 +5108,6 @@
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 137.16 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c4ed7482-cd28-4a7f-9760-f48997ae1548")
-		(property "Reference" "R14"
-			(at 158.75 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 137.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 135.382 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1df7fb8c-52bb-425d-9e06-0c8e9affdc1e")
-		)
-		(pin "1"
-			(uuid "09a1746d-5742-4d41-85af-06ef539f99d7")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -5182,6 +5182,76 @@
 			(project ""
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
 					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d85baf6e-b48f-438f-aa95-8e334b5edc29")
+		(property "Reference" "R4"
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.306 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 94.742 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "31a524f6-39ec-4040-aad4-d80bf0d10b75")
+		)
+		(pin "1"
+			(uuid "d571c6a7-e744-4a4b-a1b0-3dadcd39142b")
+		)
+		(instances
+			(project "gamepi_sp"
+				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5272,15 +5342,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 142.24 270)
+		(at 160.02 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "df36399f-627e-4db8-b6d5-166b6eed6a7e")
-		(property "Reference" "R4"
-			(at 158.75 139.7 0)
+		(uuid "e517eb11-fe6f-4e22-9629-6bf25c941694")
+		(property "Reference" "R13"
+			(at 158.75 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5290,7 +5360,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 162.306 142.24 90)
+			(at 162.306 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5298,8 +5368,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 140.462 90)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 160.02 135.382 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5308,7 +5378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 142.24 0)
+			(at 160.02 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,7 +5387,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 142.24 0)
+			(at 160.02 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,85 +5396,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "c804e2ee-0430-4a1b-8a41-6bf0887aa8b0")
+			(uuid "89175db7-d33d-4d74-b640-e6e1aa750ec5")
 		)
 		(pin "1"
-			(uuid "c22661fc-38b8-44dd-9928-e5ef40bc9b62")
+			(uuid "6f79b1da-9e80-4a15-999f-86384f86c4c1")
 		)
 		(instances
 			(project "gamepi_sp"
 				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 111.76 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0942150-12d9-4898-a0c2-ef33e12c7d27")
-		(property "Reference" "R11"
-			(at 158.75 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "100k"
-			(at 162.306 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 160.02 109.982 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 160.02 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "46ce8f48-fda9-4d22-ad81-af50032fc987")
-		)
-		(pin "1"
-			(uuid "443af10c-f8f7-4b07-818e-824391e63916")
-		)
-		(instances
-			(project "gamepi_sp"
-				(path "/877a14f0-3d82-4fbd-8546-db6df7d773fb"
-					(reference "R11")
+					(reference "R13")
 					(unit 1)
 				)
 			)

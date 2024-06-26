@@ -4,7 +4,7 @@
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 19 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "a13c7d35-0745-4fd8-a5a1-83ac694d14c8")
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "powerboost_1000C_pins"
-		(at 0 1 0)
+		(at 19 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "81c915ac-506b-4fd0-be7c-fada3cea1fb5")
@@ -28,7 +28,7 @@
 		)
 	)
 	(property "Footprint" ""
-		(at 0 0 0)
+		(at 19 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -41,7 +41,7 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at 19 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -54,7 +54,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 19 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -68,8 +68,8 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -2 -21.72)
-		(end 20.86 14.48)
+		(start 21 -21.72)
+		(end -1.86 14.48)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -79,7 +79,7 @@
 		(uuid "f1fe7cad-1fec-43b6-908f-e8eeffd1ee84")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at 19 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "e502fbd9-f74f-4dee-b8fc-e20ea2f1b471")
@@ -91,7 +91,7 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at -1 -5)
+		(at 20 -5)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
@@ -99,7 +99,7 @@
 		(uuid "77e5dad1-69a2-4908-8143-204fc41f752b")
 	)
 	(pad "2" thru_hole circle
-		(at -1 -1)
+		(at 20 -1)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
@@ -107,7 +107,7 @@
 		(uuid "49d79c39-84fa-4f86-a765-8c8031bc0c7d")
 	)
 	(pad "3" thru_hole circle
-		(at -1 1)
+		(at 20 1)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
@@ -115,7 +115,7 @@
 		(uuid "b74d2a0e-74fd-4b53-9c16-8063fb905552")
 	)
 	(pad "4" thru_hole circle
-		(at -1 3)
+		(at 20 3)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
@@ -123,7 +123,7 @@
 		(uuid "1ae5b8b4-b9a2-45e2-b8ef-18722324c093")
 	)
 	(pad "5" thru_hole circle
-		(at 9 13)
+		(at 10 13)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
@@ -131,7 +131,7 @@
 		(uuid "6837f2ba-f1de-4e45-929b-dfdd7bd95500")
 	)
 	(pad "6" thru_hole circle
-		(at 11 13)
+		(at 8 13)
 		(size 1.524 1.524)
 		(drill 0.762)
 		(layers "*.Cu" "*.Mask")
