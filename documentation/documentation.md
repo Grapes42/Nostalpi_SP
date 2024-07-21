@@ -58,6 +58,26 @@ I researched some mobile power options for the Pi Zero:
 |Pisugar 3|<img src="pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
 |PowerBoost 1000C|<img src="powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 
+## 9. Future Opportunities
+This project, being a recreation of a retro handheld has the opportunity to easily be reshaped into various other handhelds of the time. The Pi Zero is more than capable of running various emulators, it is simply a matter of rearranging the circuit to fit the new form factor.
+
+I would be able to recreate various handheld consoles using the same, or slightly modified circuit. Some popular ones I could recreate are:
+- Gameboy/Gameboy Color
+- Gameboy Advance
+- Sega Game Gear
+- Nintendo DS/Nintendo 2DS
+- PlayStation Portable
+
+There is also great opportunity to create my own design for handheld consoles in the style of at home consoles. These could be custom modelled and printed to keep elements of the design of the original console, all while compacting it into a handheld experience. Some popular ones of could create are:
+- Atari 7800
+- NES/SNES
+- Commodore 64
+- Sega Genesis/Sega Saturn
+- Nintendo 64
+- Sega Dreamcast
+- PlayStation/PlayStation 2
+- GameCube
+
 ## 10. Proposed Solution
 As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP.
 It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
