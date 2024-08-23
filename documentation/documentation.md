@@ -25,7 +25,8 @@ The project can start when I have received the parts which should be around the 
 |Test games|5th September|
 |Test on a breadboard|7th September|
 |Manufacture PCB|15th September|
-|Modify case to allow the PCB to fit well|19th September|
+|Modify case to allow the PCB to fit well|17th September|
+|Solder together parts|19th September|
 |Assemble case|20th September|
 |Test games and all inputs|21st September|
 |Test battery life and charging|22nd September|
@@ -57,13 +58,12 @@ For the brain of the computer I will need a small singleboard computer as design
 |Name|Picture|Pros|Cons|
 |-|-|-|-|
 |Orange Pi 5 Plus|<img src="images/orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>2.4GHz 8-core CPU with 16GB ram (Very fast)</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large to embed</li><li>Will need cooling</li></ul>|[//]: ----------
-|Asus Tinker Board S R2.0|<img src="images/asus_tinker.jpg" alt="gba" width="200"/>|a|a| [//]:----------
-|Odroid N2|<img src="images/odroid.jpg" alt="gba" width="200"/>|a|a|[//]: ----------
-|Raspberry Pi 4|<img src="images/pi_4.jpg" alt="gba" width="200"/>|a|a| [//]:----------
-|Pi Zero|<img src="images/pi_zero.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Super cheap</li><li>Very small</li></ul>|<ul><li>Single core 1GHz CPU with 512MB ram (too slow for a comfortable emulating experience)</li></ul>| [//]:----------
-|Pi Zero 2 W|<img src="images/pi_zero_2.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Very cheap (slightly more expensive than the Pi Zero)</li><li>Very small (Same size as the Pi Zero)</li></ul>|<ul><li>Lack of inbuilt ports</li></ul>| [//]:----------
-|Arduino Pro Portena X8|<img src="images/arduino_portena.jpg" alt="gba" width="200"/>|a|a| [//]:----------
+|Raspberry Pi 4 Model B|<img src="images/pi_4.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>1.8GHz Quad-core CPU (Fast)</li><li>Multiple choices for amount of RAM 1-8GB</li><li>Built in USB-C, HDMI, USB2$\times$2, USB3$\times$2, Gigabit ethernet, 5GHz Wi-Fi, Bluetooth 5.0</li></ul>|<ul><li>Moderately expensive</li><li>Too large to embed</li></ul>| [//]:----------
+|Pi Zero|<img src="images/pi_zero.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Super cheap</li><li>Very small</li></ul>|<ul><li>Single core 1GHz CPU with 512MB ram (too slow for a comfortable emulating experience)</li><li>Lack of inbuilt ports and wireless connection</li></ul>| [//]:----------
+|Pi Zero 2 W|<img src="images/pi_zero_2.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Very cheap (slightly more expensive than the Pi Zero)</li><li>Very small (Same size as the Pi Zero)</li><li>Inbuilt 2.4GHz Wi-FI, Bluetooth 4.2</li></ul>|<ul><li>Lack of inbuilt ports</li></ul>| [//]:----------
+|Arduino Pro Portena X8|<img src="images/arduino_portena.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>9 cores: 4$\times$1.8GHz + Others around 500-400MHz (Fast)</li><li>Very small (Same size as the Pi Zero)</li></ul>|<ul><li>Lack of inbuilt ports</li><li>Very expensive</li></ul>| [//]:----------
 
+I decided to go with the Pi Zero 2 W, as in my opinion it has the best tradeoff between size, performance, cost, adaptability, and functionality.
 ### The Power Supply
 I researched some mobile power options for the Pi Zero:
 
@@ -73,8 +73,10 @@ I researched some mobile power options for the Pi Zero:
 |Pisugar 3|<img src="images/pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
 |PowerBoost 1000C|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 
+I decided to go with the PowerBoost 1000C as I believe it has the best tradeoff between cost, size, and functionality.
+
 ## 6. Perspectives
-To gain better and more diverse perspectives I decided to ask some of my friends and family:
+To gain better and more diverse perspectives I decided to ask some of my friends and family, and how they would want to use such a device:
 ### Me:
 #### Games:
 - Turn based adventurers like 'Pokemon' and 'Final Fantasy Tactics Advance'
