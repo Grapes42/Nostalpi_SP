@@ -15,21 +15,23 @@
 - How will it be comfortable to use? How should the buttons be layed out? What should the screen be like to avoid eye-strain.
 
 ## 3. Milestones
+The project can start when I have received the parts which should be around the start of September, and it must be completed by the due date 27 September. This gives me ~25 days to complete the physical parts of the project. As I have to wait until the parts arrive, all programming and design should be completed first. 
 |Target|Date|
 |-|-|
-|Research parts||
-|Install and setup Retropie||
-|Test games||
-|Design the Schematic||
-|Test on a breadboard||
-|Design the PCB||
-|Manufacture PCB||
-|Program power control||
-|Modify case to allow the PCB to fit well||
-|Assemble case||
-|Test games and all inputs||
-|Test battery life and charging||
-|Revise and adjust||
+|Design the Schematic|27 August|
+|Design the PCB|29 August|
+|Programming for the power logic|1st September|
+|Install and setup Retropie|5th September|
+|Test games|5th September|
+|Test on a breadboard|7th September|
+|Manufacture PCB|15th September|
+|Modify case to allow the PCB to fit well|19th September|
+|Assemble case|20th September|
+|Test games and all inputs|21st September|
+|Test battery life and charging|22nd September|
+|Revise and adjust|25th September|
+
+This gives me 2 days space in case anything required more time.
 
 ## 4. Research
 The world of handheld devices has now been completely dominated by the smartphone, there are modern devices designed for playing games such as the Nintendo Switch, but this is far too large and pricey for what I want to create. 
