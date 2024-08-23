@@ -160,6 +160,16 @@ This device is a tiny and low cost 64-bit single board computer, designed to run
 |<img src="images/gamepi_sp_plans_inside.jpg" alt="gba" width="400"/>|<img src="images/gamepi_sp_plans_outside.jpg" alt="gba" width="400"/>|
 
 ## 11. Risks and Mitigations
+### Risks
+Some risks that may be apparent in implementing the proposed solution include:
+- Battery shorts/other issues if the charging circuit has an issue.
+- General shorts by parts touching one another
+
+### Mitigation
+Some ways theses risks can be mitigated are:
+- Thoroughly testing the charging circuit with a Multimeter, to ensure it works as it should before connecting a battery.
+- Thoroughly testing the PCB and other components' connections with a Multimeter to ensure they work as they should, before final assembly
+- Adequate spacing and/or insulation between layers to prevent shorts.
 
 ## 12. Evaluation
 
