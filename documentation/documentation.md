@@ -39,15 +39,15 @@ The world of handheld devices has now been completely dominated by the smartphon
 
 Looking back to the early 2000s there are some great examples of pocket handhelds such as:
 
-|||
-|-|-|
-|Nintendo Gameboy Advance|<img src="images/gba.jpg" alt="gba" width="200"/>|
+|Name|Picture|Features|Issues|
+|-|-|-|-|
+|Nintendo Gameboy Advance|<img src="images/gba.jpg" alt="gba" width="200"/>|<ul><li></li></ul>|
 |Sega Game Gear|<img src="images/sega_game_gear.jpg" alt="sega game gear" width="200"/>|
 |Nintendo DS|<img src="images/ds.jpg" alt="ds" width="200"/>|
 
 And many others. The one that stands out to me the most is the Nintendo Gameboy Advance SP.
 
-<img src="images/gba_sp.jpg" alt="gba sp" width="200"/>
+<img src="images/gba_sp.jpg" alt="gba sp" width="400"/>
 
 It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
 
@@ -124,8 +124,10 @@ This means the device must be:
 
 The challenge will be creating a design that balances these variables well. Too small and it will have a poor battery life and be uncomfortable to use. Too large and it will not be able to fit in your pocket. 
 
-
 ## 7. Critiquing
+All my research has been taken from the data sheets from the manufacturer of the product so it is reliable. I have based my opinions off the data, this way my choice will not be swerved by a random person's personal preference.
+
+Though, just a data sheet isn't enough to show whether a product is viable. To provide more info in the real usage of the product, user reviews would be good. I originally stayed away from this, but as long as I fact check the info and compare for and against views, user reviews can be a useful info source.
 
 ## 8. Refined Project Focus
 
@@ -155,15 +157,17 @@ As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunate
 This device is a tiny and low cost 64-bit single board computer, designed to run GNU/Linux, which is my preferred operating system, this one runs a specific distro called Raspian (I refuse to use the rebranded name Raspberry Pi OS). It boasts an impressive quad-core 1GHz CPU and 512MB of SDRAM. That’s otherworldly from the original Nintendo GBA SP’s single core 16MHz and 384Kb of total ram. This will allow a smooth and fast experience playing retro handheld games, as well as any application I implement. It also supports comes with Bluetooth 4.2 and 2.4GHz Wireless LAN, which will allow easy connection to the device, such as connecting Bluetooth headphones, wirelessly transferring games, automated updates, etc.
 
 ### Proposed Diagram
-|Inside|Top|
-|-|-|
-|<img src="images/gamepi_sp_plans_inside.jpg" alt="gba" width="400"/>|<img src="images/gamepi_sp_plans_outside.jpg" alt="gba" width="400"/>|
+<img src="images/gamepi_sp_plans_inside.jpg" alt="gba" width="400"/> <img src="images/gamepi_sp_plans_outside.jpg" alt="gba" width="400"/>
+
+Further decoration and polishing will be added to the case to create a refined outcome.
+
+<img src="images/gamepi_sp_final_proposal.jpg" alt="gba" width="500"/>
 
 ## 11. Risks and Mitigations
 ### Risks
 Some risks that may be apparent in implementing the proposed solution include:
 - Battery shorts/other issues if the charging circuit has an issue.
-- General shorts by parts touching one another
+- General shorts by parts touching one another.
 
 ### Mitigation
 Some ways theses risks can be mitigated are:
@@ -172,5 +176,6 @@ Some ways theses risks can be mitigated are:
 - Adequate spacing and/or insulation between layers to prevent shorts.
 
 ## 12. Evaluation
+
 
 ## 13. Learnings and Reflections
