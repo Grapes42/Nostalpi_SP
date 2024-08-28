@@ -131,6 +131,7 @@ Though, just a data sheet isn't enough to show whether a product is viable. To p
 
 ## 8. Refined Project Focus
 
+
 ## 9. Future Opportunities
 This project, being a recreation of a retro handheld has the opportunity to easily be reshaped into various other handhelds of the time. The Pi Zero is more than capable of running various emulators, it is simply a matter of rearranging the circuit to fit the new form factor.
 
