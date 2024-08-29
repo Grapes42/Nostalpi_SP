@@ -3,9 +3,32 @@
 
 ## 1. Project Focus
 ### Problem Brainstorming:
-- Remembering and creating secure passwords
-- Losing items
-- Phones being boring and social media mindless
+1. Remembering and creating secure passwords.
+2. Losing items.
+3. Social media being a mindless attention grabber.
+4. Modern phones all being owned by large data collecting corporations.
+5. Modern phones all being the same glass rectangle, there is no individuality.
+
+### Problem Summary
+For my project problem I have decided to focus on a combination of 3, 4, and 5. I will expand on each of the points. 
+#### Social Media
+Modern social media is designed with the sole intent of keeping you scrolling for as long as possible to gather information about you. I, as well as so many others find it far too easy to pickup their phone and just start scrolling. Social media becomes draining and there is no sense of achivement. 
+
+My solution comes from when I discovered the wonderful world of game emulation. When I had some down time and wanted something relaxing to do, whether that be on the bus, in bed, etc, instead of scrolling and achieving nothing, I felt joy from winning a Pokémon battle or finally beating that boss in Castlevania.
+
+Phones work for some games, mostly turn based, but trying to play fast paced games is an absolute nightmare. Creating a device with physical buttons designed for emulation would result in a far superior experience.
+
+#### Data Collecting Corporations
+All modern smartphones are software locked down and proprietary, this means you do not have full control over the device and are unable to see what the phone is doing without you knowing. This creates major privacy issues where the company owning your phone is able to do whatever they please with your information. Yes there are legal restrictions, but often these are not enough. It also creates issues where you are unable to do anything if they randomly stop supporting some piece of software, you are at their whim.
+
+My device will run on purely open-source software, these means you have full control over the device and are able to see whatever it may be doing. It creates a much healthier user to software relationship, respecting you as a consumer.
+
+#### Lack Of Individuality
+Modern smartphone have very much converged to a standard design, a thin glass brick. While this definitly helps with industry standardisation, it removes all individuality. I much personally prefer the innovative and charming phones of the early 2000s:
+|<img src="images/rotating_vodafone.jpg" alt="gba" width="300"/>|<img src="images/t_mobile.jpg" alt="gba" width="300"/>|
+|-|-|
+|<img src="images/nokia_7280.jpg" alt="gba" width="300"/>|<img src="images/nokia_7600.jpg" alt="gba" width="300"/>|
+|<img src="images/siemens.jpg" alt="gba" width="300"/>|<img src="images/nokia_ngage.jpg" alt="gba" width="300"/>|
 
 ## 2. Inquiry Questions
 - What are common games people emulate? What controls will my device need? How powerful will it need to be?
@@ -76,13 +99,17 @@ I researched some mobile power options for the Pi Zero:
 I decided to go with the PowerBoost 1000C as I believe it has the best tradeoff between cost, size, and functionality.
 
 ## 6. Perspectives
-To gain better and more diverse perspectives I decided to ask some of my friends and family, and how they would want to use such a device:
+To gain better and more diverse perspectives I decided to ask some of my friends to see how they would want to use such a device:
 ### Me:
 #### Games:
-- Turn based adventurers like 'Pokemon' and 'Final Fantasy Tactics Advance'
+- Turn based adventurers like 'Pokémon' and 'Final Fantasy Tactics Advance'
 - Platformers fighters like 'Kirby & the Amazing Mirror' and 'Castlevania: Aria of Sorrow'
 - Adventure games like 'The Legend of Zelda: The Minish Cap'
 - Roguelikes like 'Brogue'
+
+|Castlevania|Final Fantasy Tactics Advance|
+|-|-|
+|<img src="images/castlevania.jpg" alt="gba" width="300"/>|<img src="images/final_fantasy.jpg" alt="gba" width="300"/>|
 
 #### Form
 - Able to be taken everywhere
@@ -91,9 +118,13 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 
 ### Holly:
 #### Games:
-- Turn based adventurers like 'Pokemon'
+- Turn based adventurers like 'Pokémon'
 - Farming games like 'Harvest Moon'
 - Platformers like 'Kirby & the Amazing Mirror'
+
+|Harvest Moon|Kirby & the Amazing Mirror|
+|-|-|
+|<img src="images/harvest_moon.jpg" alt="gba" width="300"/>|<img src="images/kirby_and_the_amazing_mirror.jpg" alt="gba" width="300"/>|
 
 #### Form:
 - Able to be taken everywhere
@@ -102,8 +133,12 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 
 ### Jack:
 #### Games:
-- Turn based adventurers like 'Pokemon'
+- Turn based adventurers like 'Pokémon'
 - Fighting games like 'Street Fighter'
+
+|Street Fighter|Pokémon Emerald|
+|-|-|
+|<img src="images/street_fighter.png" alt="gba" width="300"/>|<img src="images/pokemon_emerald.jpg" alt="gba" width="300"/>|
 
 #### Form:
 - Able to be taken everywhere
@@ -130,7 +165,7 @@ All my research has been taken from the data sheets from the manufacturer of the
 Though, just a data sheet isn't enough to show whether a product is viable. To provide more info in the real usage of the product, user reviews would be good. I originally stayed away from this, but as long as I fact check the info and compare for and against views, user reviews can be a useful info source.
 
 ## 8. Refined Project Focus
-
+Another issue was how clunky these emulators were, I could never trust just turning off my phone without my progress being lost, as often if I'm on the bus and in the middle of a fight I just dont have time to save.
 
 ## 9. Future Opportunities
 This project, being a recreation of a retro handheld has the opportunity to easily be reshaped into various other handhelds of the time. The Pi Zero is more than capable of running various emulators, it is simply a matter of rearranging the circuit to fit the new form factor.
@@ -169,12 +204,14 @@ Further decoration and polishing will be added to the case to create a refined o
 Some risks that may be apparent in implementing the proposed solution include:
 - Battery shorts/other issues if the charging circuit has an issue.
 - General shorts by parts touching one another.
+- Case being too fragile due to removed materials.
 
 ### Mitigation
 Some ways theses risks can be mitigated are:
-- Thoroughly testing the charging circuit with a Multimeter, to ensure it works as it should before connecting a battery.
-- Thoroughly testing the PCB and other components' connections with a Multimeter to ensure they work as they should, before final assembly
+- Thoroughly testing the charging circuit with a multimeter, to ensure it works as it should, before connecting a battery.
+- Thoroughly testing the PCB and other components' connections with a multimeter to ensure they work as they should, before final assembly.
 - Adequate spacing and/or insulation between layers to prevent shorts.
+- Carefully removing as little material as possible to fit the parts, and if an area is too thin add reinforcement. The large amount of material will be removed using a rotary tool for the sake of speed, and the final parts will be removed using abrasive paper to ensure a precise fit. Material can be added by gluing small bits of plastic or metal.
 
 ## 12. Evaluation
 
