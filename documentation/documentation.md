@@ -24,11 +24,12 @@ All modern smartphones are software locked down and proprietary, this means you 
 My device will run on purely open-source software, these means you have full control over the device and are able to see whatever it may be doing. It creates a much healthier user to software relationship, respecting you as a consumer.
 
 #### Lack Of Individuality
-Modern smartphone have very much converged to a standard design, a thin glass brick. While this definitly helps with industry standardisation, it removes all individuality. I much personally prefer the innovative and charming phones of the early 2000s:
-|<img src="images/rotating_vodafone.jpg" alt="gba" width="300"/>|<img src="images/t_mobile.jpg" alt="gba" width="300"/>|
-|-|-|
-|<img src="images/nokia_7280.jpg" alt="gba" width="300"/>|<img src="images/nokia_7600.jpg" alt="gba" width="300"/>|
-|<img src="images/siemens.jpg" alt="gba" width="300"/>|<img src="images/nokia_ngage.jpg" alt="gba" width="300"/>|
+Modern smartphone have very much converged to a standard design, a thin glass brick. While this definitly helps with industry standardisation, it removes all individuality. I much personally prefer the innovative and charming phones of the early 2000s, just look at some of these:
+|<img src="images/rotating_vodafone.jpg" alt="gba" width="300"/>|<img src="images/t_mobile.jpg" alt="gba" width="300"/>|<img src="images/nokia_7280.jpg" alt="gba" width="300"/>|
+|-|-|-|
+|<img src="images/nokia_7600.jpg" alt="gba" width="300"/>|<img src="images/siemens.jpg" alt="gba" width="300"/>|<img src="images/nokia_ngage.jpg" alt="gba" width="300"/>|a|'
+
+We've lost all mechanicalness and fun shape and design from phones, I find this very boring. I would like to make something with a mechanical feature and a fun shape and design.
 
 ## 2. Inquiry Questions
 - What are common games people emulate? What controls will my device need? How powerful will it need to be?
@@ -58,6 +59,7 @@ The project can start when I have received the parts which should be around the 
 This gives me 2 days space in case anything required more time.
 
 ## 4. Research
+### Form
 The world of handheld devices has now been completely dominated by the smartphone, there are modern devices designed for playing games such as the Nintendo Switch, but this is far too large and pricey for what I want to create. 
 
 Looking back to the early 2000s there are some great examples of pocket handhelds such as:
@@ -73,6 +75,21 @@ And many others. The one that stands out to me the most is the Nintendo Gameboy 
 <img src="images/gba_sp.jpg" alt="gba sp" width="400"/>
 
 It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
+
+#### Parts
+### The Brain
+For this project a small form factor single board computer is the most viable option, I looked at a variety of boards and picked some viable options for later comparison:
+- Orange Pi 5 Plus
+- Raspberry Pi 4 Model B	
+- Pi Zero	
+- Pi Zero 2 W	
+- Arduino Pro Portena X8
+
+### The Power Supply
+As I want this project to be portable and rechargeable it will require its own power supply. After some research I found 3 viable options for later comparison:
+- Juicebox Zero
+- Pisugar 3
+- PowerBoost 500c/1000c
 
 ## 5. Research Analysis  
 ### The Brain
@@ -94,6 +111,7 @@ I researched some mobile power options for the Pi Zero:
 |-|-|-|-|
 |Juicebox Zero|<img src="images/juicebox.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features built in</li></ul>|<ul><li>Expensive</li><li>Not as compact as other options</li><li>Fixed shape for all parts, so customisation is limited</li></ul>|[//]:----------
 |Pisugar 3|<img src="images/pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
+|PowerBoost 500C|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 |PowerBoost 1000C|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 
 I decided to go with the PowerBoost 1000C as I believe it has the best tradeoff between cost, size, and functionality.
@@ -135,6 +153,7 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 #### Games:
 - Turn based adventurers like 'Pokémon'
 - Fighting games like 'Street Fighter'
+- Platformer fighters like "Plok!"
 
 |Street Fighter|Pokémon Emerald|
 |-|-|
