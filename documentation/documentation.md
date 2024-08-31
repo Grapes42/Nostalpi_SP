@@ -31,6 +31,9 @@ Modern smartphone have very much converged to a standard design, a thin glass br
 
 We've lost all mechanicalness and fun shape and design from phones, I find this very boring. I would like to make something with a mechanical feature and a fun shape and design.
 
+#### Summary
+To summarise I am creating a pocket sized portable device to counter the mindlessness, boring standardisation and privacy concerns of modern phones.
+
 ## 2. Inquiry Questions
 - What are common games people emulate? What controls will my device need? How powerful will it need to be?
 - What connections/ports will I need to add to make this viable for anyone to use and charge? Will it need modern connections like bluetooth, USB-C, etc?
@@ -74,10 +77,10 @@ And many others. The one that stands out to me the most is the Nintendo Gameboy 
 
 <img src="images/gba_sp.jpg" alt="gba sp" width="400"/>
 
-It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons.
+It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons which is great for throwing in a bag, or chucking in your pocket.
 
-#### Parts
-### The Brain
+### Parts
+#### The Brain
 For this project a small form factor single board computer is the most viable option, I looked at a variety of boards and picked some viable options for later comparison:
 - Orange Pi 5 Plus
 - Raspberry Pi 4 Model B	
@@ -85,7 +88,7 @@ For this project a small form factor single board computer is the most viable op
 - Pi Zero 2 W	
 - Arduino Pro Portena X8
 
-### The Power Supply
+#### The Power Supply
 As I want this project to be portable and rechargeable it will require its own power supply. After some research I found 3 viable options for later comparison:
 - Juicebox Zero
 - Pisugar 3
@@ -131,6 +134,7 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 
 #### Form
 - Able to be taken everywhere
+- Used at home, or while waiting on busses, meetings, etc.
 - Pocket sized
 - Used often, requires long battery life
 
@@ -146,8 +150,13 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 
 #### Form:
 - Able to be taken everywhere
+- Used at home, or while waiting on busses, meetings, etc.
 - Pocket or bag size
 - Used often, requires long battery life
+
+#### Requests:
+- Wants to be able to transfer games wirelessly.
+
 
 ### Jack:
 #### Games:
@@ -163,6 +172,9 @@ To gain better and more diverse perspectives I decided to ask some of my friends
 - Able to be taken everywhere
 - Pocket sized
 - Used often, requires long battery life
+
+### Requests:
+- Wants to be able to link saves with desktop computer.
 
 ### Evaluation
 According to my findings: 
@@ -184,7 +196,80 @@ All my research has been taken from the data sheets from the manufacturer of the
 Though, just a data sheet isn't enough to show whether a product is viable. To provide more info in the real usage of the product, user reviews would be good. I originally stayed away from this, but as long as I fact check the info and compare for and against views, user reviews can be a useful info source.
 
 ## 8. Refined Project Focus
-Another issue was how clunky these emulators were, I could never trust just turning off my phone without my progress being lost, as often if I'm on the bus and in the middle of a fight I just dont have time to save.
+### Requirements After Evaluation
+After careful consideration to how and where this device will be used I have listed some other issues to be solved in the design:
+
+#### Fast saving and suspending
+Often where this device will be used will be places of waiting where you have to suddenly stop playing, this will leave you with no time to save your game and shutdown the device. To solve this I will encorporate a lid switch by using a magnet and hall-effect sensor, when the lid is detected as closed the device will:
+1. Pause the emulation.
+2. Create a save state in case of power loss.
+3. Power off the display.
+4. Put the Pi Zero into a suspend state.
+
+This will ensure your game progress is safe no matter how suddenly you have to stop, and that power is conserved when not in use.
+
+The device will also optionally shutdown after a period of time to conserve more power. Tests on battery life in suspended state will be conducted to decide good time periods for this.
+
+When the lid is opened back up, the device will:
+1. Bring the Pi Zero out of its suspend state.
+2. Power on the display.
+3. Resume the emulation.
+
+This will make stopping and starting a seamless process, and great for playing when hopping between busses, between work and meetings, etc.
+
+#### Wireless file transfer and syncing
+2 requests I had were the abilities to transfer files wirelessly, so they don't have to bother with cables or SD cards, and being able to sync games with a computer wirelessly. These 2 features can be implemented using the same technology as they are both simply transferring files. 
+
+For the file transfer I will use [SFTP](https://www.ssh.com/academy/ssh/sftp-ssh-file-transfer-protocol), a secure file transfer protocol which is I am very familiar with. To interface with the device the user can connect to its IP in a web browser on their phone or computer, and transfer and manage files with a web user interface.
+
+For syncing I will use a combination of SFTP and the version control software Git. This will allow me to check for the most up to date save file(s), and ensure that both devices have that save. This will be handled by a simple script like the following:
+
+Computer (client side Git) script:
+```bash
+#!/bin/bash
+# Updates save state from Pi Zero
+git pull 
+
+# Checks if there have been changes
+# to the local save file
+git status | grep "Untracked files"
+ahead=$?
+
+# If this device is ahead, then
+# commit and push changes to
+# update the Pi Zero
+if [ ahead -eq 0 ]; then
+    git add --all
+    git commit
+    git push
+fi
+
+```
+Pi Zero (Host side Git) script:
+```bash
+#!/bin/bash
+# Checks if there have been changes
+# to the local save file
+git status | grep "Untracked files"
+ahead=$?
+
+# If this device is ahead, then
+# commit and push changes to
+# update the repository
+if [ ahead -eq 0 ]; then
+    git add --all
+    git commit
+fi
+```
+I will also implement a client side script for Windows users using Python, as they don't have a built in language as capable as Bash.
+
+Using version control like this, ensures security of your save files. Too many times have I lost my progress, now this is impossible with Git tracking each save. It also allows you to rollback to a previous save file, this is essential in repairing corrupt saves.
+
+
+To summarise I am creating a pocket sized portable device to counter the mindlessness, boring standardisation and privacy concerns of modern phones.
+
+
+
 
 ## 9. Future Opportunities
 This project, being a recreation of a retro handheld has the opportunity to easily be reshaped into various other handhelds of the time. The Pi Zero is more than capable of running various emulators, it is simply a matter of rearranging the circuit to fit the new form factor.
