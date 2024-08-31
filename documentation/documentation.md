@@ -224,52 +224,80 @@ For the file transfer I will use [SFTP](https://www.ssh.com/academy/ssh/sftp-ssh
 
 For syncing I will use a combination of SFTP and the version control software Git. This will allow me to check for the most up to date save file(s), and ensure that both devices have that save. This will be handled by a simple script like the following:
 
-Computer (client side Git) script:
+Computer (client side) script:
 ```bash
 #!/bin/bash
-# Updates save state from Pi Zero
-git pull 
 
-# Checks if there have been changes
-# to the local save file
-git status | grep "Untracked files"
-ahead=$?
+# bash script called when emulating on client
 
-# If this device is ahead, then
-# commit and push changes to
-# update the Pi Zero
-if [ ahead -eq 0 ]; then
-    git add --all
-    git commit
-    git push
-fi
+# 0 = found by grep
+# 1 = not found by grep
 
+while true; do
+    # Checks if local files are
+    # up to date with the server
+    git status | grep "is up to date"
+    up_to_date=$?
+
+    # If not up to date then update
+    if [ up_to_date -eq 1 ]; then
+        git pull
+    fi
+
+    # Checks if there have been changes
+    # to the local save file
+    git status | grep "Untracked files"
+    commit=$?
+
+    # If this device is ahead, then
+    # commit and push changes to
+    # update the server
+    if [ commit -eq 0 ]; then
+        git add --all
+        git commit
+        git push
+    fi
+
+    sleep 10
+done
 ```
-Pi Zero (Host side Git) script:
+Pi Zero (Server side) script:
 ```bash
 #!/bin/bash
-# Checks if there have been changes
-# to the local save file
-git status | grep "Untracked files"
-ahead=$?
 
-# If this device is ahead, then
-# commit and push changes to
-# update the repository
-if [ ahead -eq 0 ]; then
-    git add --all
-    git commit
-fi
+# bash script called when emulating on server
+
+# 0 = found by grep
+# 1 = not found by grep
+
+while true; do
+    # Checks if there have been changes
+    # to the local save file
+    git status | grep "Untracked files"
+    commit=$?
+
+    # If this device is ahead, then
+    # commit and update the repository
+    if [ commit -eq 0 ]; then
+        git add --all
+        git commit
+    fi
+
+    sleep 10
+done
 ```
-I will also implement a client side script for Windows users using Python, as they don't have a built in language as capable as Bash.
+(I will also implement a client side script for Windows users using Python, as they don't have a built in language as capable as Bash.)
+
+These 2 scripts will ensure that both devices are always in sync, this removes the issues of having out of sync save files between devices.
 
 Using version control like this, ensures security of your save files. Too many times have I lost my progress, now this is impossible with Git tracking each save. It also allows you to rollback to a previous save file, this is essential in repairing corrupt saves.
 
+### Final Project Focus
+My project aim's to solve the issues created by social media and large data collecting corporations. I aim to fix this by creating a device which creates an alternative to mindlessly scrolling social media, by allowing you to play GBA style games when you need to zone out, which creates far more fulfilling down time. The device will also respect you and your privacy by being completely open-source, and collecting no information.
 
-To summarise I am creating a pocket sized portable device to counter the mindlessness, boring standardisation and privacy concerns of modern phones.
+After lots of research and evaluation I have decided what the device will require:
 
-
-
+The device will be used both at home in the comfort of a bed or couch, and out in public when on a bus, waiting for a meeting, etc. It will need to be compact enough to fit in a pocket, yet large enough to be comfortable to hold and use, and have a long enough battery life. It will require automatic saving and good power management to make it easy and convenient to use. It will need to be comfortable to play both turn based and action games. It will require wireless connections, including Bluetooth and WiFi, for file transfer and connecting headphones. It will need USB-C for charging and data-transfer to be compatible with the modern standard, USB-A for other modern data transfer or peripherals. User friendly interfaces for all aspects, including changing settings, updating, connecting Bluetooth periferals, and transferring files over WiFi and Bluetooth.
 
 ## 9. Future Opportunities
 This project, being a recreation of a retro handheld has the opportunity to easily be reshaped into various other handhelds of the time. The Pi Zero is more than capable of running various emulators, it is simply a matter of rearranging the circuit to fit the new form factor.
@@ -292,9 +320,13 @@ There is also great opportunity to create my own design for handheld consoles in
 - GameCube
 
 ## 10. Proposed Solution
+I have decided to call this device Nostalpi SP, derived from the words 'Nostalgia', 'Rasberry Pi', 'GBA SP'
+
 As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP. It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons. The brains behind the device will be a Raspberry Pi Zero 2 W.
 
-This device is a tiny and low cost 64-bit single board computer, designed to run GNU/Linux, which is my preferred operating system, this one runs a specific distro called Raspian (I refuse to use the rebranded name Raspberry Pi OS). It boasts an impressive quad-core 1GHz CPU and 512MB of SDRAM. That’s otherworldly from the original Nintendo GBA SP’s single core 16MHz and 384Kb of total ram. This will allow a smooth and fast experience playing retro handheld games, as well as any application I implement. It also supports comes with Bluetooth 4.2 and 2.4GHz Wireless LAN, which will allow easy connection to the device, such as connecting Bluetooth headphones, wirelessly transferring games, automated updates, etc.
+The Raspberry Pi Zero is a tiny and low cost 64-bit single board computer, designed to run GNU/Linux, which is my preferred operating system, this one runs a specific distro called Raspian (I refuse to use the rebranded name Raspberry Pi OS). It boasts an impressive quad-core 1GHz CPU and 512MB of SDRAM. That’s otherworldly from the original Nintendo GBA SP’s single core 16MHz and 384Kb of total ram. This will allow a smooth and fast experience playing retro handheld games, as well as any application I implement. It also supports comes with Bluetooth 4.2 and 2.4GHz Wireless LAN, which will allow easy connection to the device, such as connecting Bluetooth headphones, wirelessly transferring games, automated updates, etc.
+
+Nostalpi SP is a pocket sized gaming handheld 
 
 ### Proposed Diagram
 <img src="images/gamepi_sp_plans_inside.jpg" alt="gba" width="400"/> <img src="images/gamepi_sp_plans_outside.jpg" alt="gba" width="400"/>
