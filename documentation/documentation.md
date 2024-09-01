@@ -222,7 +222,7 @@ This will make stopping and starting a seamless process, and great for playing w
 
 For the file transfer I will use [SFTP](https://www.ssh.com/academy/ssh/sftp-ssh-file-transfer-protocol), a secure file transfer protocol which is I am very familiar with. To interface with the device the user can connect to its IP in a web browser on their phone or computer, and transfer and manage files with a web user interface.
 
-For syncing I will use a combination of SFTP and the version control software Git. This will allow me to check for the most up to date save file(s), and ensure that both devices have that save. This will be handled by a simple script like the following:
+For syncing I will use a combination of SFTP and the version control software [Git](https://git-scm.com/). This will allow me to check for the most up to date save file(s), and ensure that both devices have that save. This will be handled by a simple script like the following:
 
 Computer (client side) script:
 ```bash
@@ -321,6 +321,9 @@ There is also great opportunity to create my own design for handheld consoles in
 
 ## 10. Proposed Solution
 I have decided to call this device Nostalpi SP, derived from the words 'Nostalgia', 'Rasberry Pi', 'GBA SP'
+
+A little logo, courtesy of my girlfriend
+<img src="images/nostalpi_sp_dark.png" alt="gba" width="300"/>
 
 As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP. It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons. The brains behind the device will be a Raspberry Pi Zero 2 W.
 
