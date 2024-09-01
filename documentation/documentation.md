@@ -357,14 +357,17 @@ Some ways theses risks can be mitigated are:
 - Adequate spacing and/or insulation between layers to prevent shorts.
 - Carefully removing as little material as possible to fit the parts, and if an area is too thin add reinforcement. The large amount of material will be removed using a rotary tool for the sake of speed, and the final parts will be removed using abrasive paper to ensure a precise fit. Material can be added by gluing small bits of plastic or metal.
 
-## 12. Evaluation
+## 12/13. Evaluation, Learnings and Reflections
 
+The inquiry process helped immensly in shaping the project to its refined design. Through research, evaluation and feedback the project stayed with the realm on the original idea, but is now thoroughly refined and improved.
 
-## 13. Learnings and Reflections
+Some main areas of improvement were:
+- Use cases. With peer feedback, I was able to more accurately refine the project to better fit an average person's useage.
+- Power management. After research and defining user needs, I was able to implement power saving features into the design which will increase the battery life, making the device more convenient to use.
+- Connections. Based off requested features, the ability to easily transfer files was added, which makes transferring files and updates far easier.
+- Syncing. The ability to effortlessly sync the device with another computer is great for those who play games over various devices.
 
-
-
-
+The most useful aspects of the inquiry process for me were 4. Research, 5. Research Analysis, and 6. Perspectives. 4 and 5 allowed me to find how other handhelds were designed, and find the best parts for my project. 6 allowed fresh ideas which I was able to encorporate into the design.
 
 ## Sources
 1. http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html
