@@ -67,9 +67,9 @@ The world of handheld devices has now been completely dominated by the smartphon
 
 Looking back to the early 2000s there are some great examples of pocket handhelds such as:
 
-|Name|Picture|Features|Issues|
-|-|-|-|-|
-|Nintendo Gameboy Advance|<img src="images/gba.jpg" alt="gba" width="200"/>|<ul><li></li></ul>|
+|Name|Picture|
+|-|-|
+|Nintendo Gameboy Advance|<img src="images/gba.jpg" alt="gba" width="200"/>|
 |Sega Game Gear|<img src="images/sega_game_gear.jpg" alt="sega game gear" width="200"/>|
 |Nintendo DS|<img src="images/ds.jpg" alt="ds" width="200"/>|
 
@@ -100,11 +100,11 @@ For the brain of the computer I will need a small singleboard computer as design
 
 |Name|Picture|Pros|Cons|
 |-|-|-|-|
-|Orange Pi 5 Plus|<img src="images/orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>2.4GHz 8-core CPU with 16GB ram (Very fast)</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large to embed</li><li>Will need cooling</li></ul>|[//]: ----------
-|Raspberry Pi 4 Model B|<img src="images/pi_4.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>1.8GHz Quad-core CPU (Fast)</li><li>Multiple choices for amount of RAM 1-8GB</li><li>Built in USB-C, HDMI, USB2$\times$2, USB3$\times$2, Gigabit ethernet, 5GHz Wi-Fi, Bluetooth 5.0</li></ul>|<ul><li>Moderately expensive</li><li>Too large to embed</li></ul>| [//]:----------
-|Pi Zero|<img src="images/pi_zero.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Super cheap</li><li>Very small</li></ul>|<ul><li>Single core 1GHz CPU with 512MB ram (too slow for a comfortable emulating experience)</li><li>Lack of inbuilt ports and wireless connection</li></ul>| [//]:----------
-|Pi Zero 2 W|<img src="images/pi_zero_2.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Very cheap (slightly more expensive than the Pi Zero)</li><li>Very small (Same size as the Pi Zero)</li><li>Inbuilt 2.4GHz Wi-FI, Bluetooth 4.2</li></ul>|<ul><li>Lack of inbuilt ports</li></ul>| [//]:----------
-|Arduino Pro Portena X8|<img src="images/arduino_portena.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>9 cores: 4$\times$1.8GHz + Others around 500-400MHz (Fast)</li><li>Very small (Same size as the Pi Zero)</li></ul>|<ul><li>Lack of inbuilt ports</li><li>Very expensive</li></ul>| [//]:----------
+|Orange Pi 5 Plus [1]|<img src="images/orange_pi.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>2.4GHz 8-core CPU with 16GB ram (Very fast)</li><li>Built in USB-C, HDMI, Power Button, WiFi, Bluetooth, microphone, headphone jack, and speaker connector</li></ul>|<ul><li>Expensive</li><li>Too large to embed</li><li>Will need cooling</li></ul>|[//]: ----------
+|Raspberry Pi 4 Model B [2]|<img src="images/pi_4.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>1.8GHz Quad-core CPU (Fast)</li><li>Multiple choices for amount of RAM 1-8GB</li><li>Built in USB-C, HDMI, USB2$\times$2, USB3$\times$2, Gigabit ethernet, 5GHz Wi-Fi, Bluetooth 5.0</li></ul>|<ul><li>Moderately expensive</li><li>Too large to embed</li></ul>| [//]:----------
+|Pi Zero [2]|<img src="images/pi_zero.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Super cheap</li><li>Very small</li></ul>|<ul><li>Single core 1GHz CPU with 512MB ram (too slow for a comfortable emulating experience)</li><li>Lack of inbuilt ports and wireless connection</li></ul>| [//]:----------
+|Pi Zero 2 W [2]|<img src="images/pi_zero_2.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>Very cheap (slightly more expensive than the Pi Zero)</li><li>Very small (Same size as the Pi Zero)</li><li>Inbuilt 2.4GHz Wi-FI, Bluetooth 4.2</li></ul>|<ul><li>Lack of inbuilt ports</li></ul>| [//]:----------
+|Arduino Pro Portena X8 [3]|<img src="images/arduino_portena.jpg" alt="gba" width="200"/>|<ul><li>Designed for GNU/Linux</li><li>9 cores: 4$\times$1.8GHz + Others around 500-400MHz (Fast)</li><li>Very small (Same size as the Pi Zero)</li></ul>|<ul><li>Lack of inbuilt ports</li><li>Very expensive</li></ul>| [//]:----------
 
 I decided to go with the Pi Zero 2 W, as in my opinion it has the best tradeoff between size, performance, cost, adaptability, and functionality.
 ### The Power Supply
@@ -112,10 +112,10 @@ I researched some mobile power options for the Pi Zero:
 
 |Name|Picture|Pros|Cons|
 |-|-|-|-|
-|Juicebox Zero|<img src="images/juicebox.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features built in</li></ul>|<ul><li>Expensive</li><li>Not as compact as other options</li><li>Fixed shape for all parts, so customisation is limited</li></ul>|[//]:----------
-|Pisugar 3|<img src="images/pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
-|PowerBoost 500C|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
-|PowerBoost 1000C|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
+|Juicebox Zero [4]|<img src="images/juicebox.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features built in</li></ul>|<ul><li>Expensive</li><li>Not as compact as other options</li><li>Fixed shape for all parts, so customisation is limited</li></ul>|[//]:----------
+|Pisugar 3 [5]|<img src="images/pisugar.png" alt="gba" width="200"/>|<ul><li>Easy to use</li><li>All required features, plus some fun and useful other ones</li></ul>|<ul><li>Very expensive</li><li>Tall form factor which wont fit well</li></ul>|[//]:----------
+|PowerBoost 500C [6]|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li></ul>|<ul><li>Will require an external circuit</li></ul>|
+|PowerBoost 1000C [7]|<img src="images/powerboost.png" alt="gba" width="200"/>|<ul><li>Low cost</li><li>Compact</li><li>Customisable form factor which will make it easy to fit</li><li>Improved effeciency at higher amperages over a larger range than the 500c counterpart, which allows the device to be used and charge simultaniously.</li></ul>|<ul><li>Will require an external circuit</li></ul>|
 
 I decided to go with the PowerBoost 1000C as I believe it has the best tradeoff between cost, size, and functionality.
 
@@ -191,9 +191,7 @@ This means the device must be:
 The challenge will be creating a design that balances these variables well. Too small and it will have a poor battery life and be uncomfortable to use. Too large and it will not be able to fit in your pocket. 
 
 ## 7. Critiquing
-All my research has been taken from the data sheets from the manufacturer of the product so it is reliable. I have based my opinions off the data, this way my choice will not be swerved by a random person's personal preference.
-
-Though, just a data sheet isn't enough to show whether a product is viable. To provide more info in the real usage of the product, user reviews would be good. I originally stayed away from this, but as long as I fact check the info and compare for and against views, user reviews can be a useful info source.
+All my research has been taken from the data sheets from the manufacturer of the products so it is reliable. I have based my opinions off the data, this way my choice will not be swerved by an individual's personal preference.
 
 ## 8. Refined Project Focus
 ### Requirements After Evaluation
@@ -325,18 +323,25 @@ I have decided to call this device Nostalpi SP, derived from the words 'Nostalgi
 A little logo, courtesy of my girlfriend
 <img src="images/nostalpi_sp_dark.png" alt="gba" width="300"/>
 
-As a kid, I had a great experience playing on my Nintendo 3DS, which unfortunately I no longer have. I want to create a handheld in a similar style to appeal to mine, and others' childhood nostalgia. I have always loved the design and formfactor of the Nintendo Gameboy Advance SP. It features a compact pocket design, which then unfolds into a comfortable handheld device. This clamshell design doubles to protect the screen and buttons. The brains behind the device will be a Raspberry Pi Zero 2 W.
 
-The Raspberry Pi Zero is a tiny and low cost 64-bit single board computer, designed to run GNU/Linux, which is my preferred operating system, this one runs a specific distro called Raspian (I refuse to use the rebranded name Raspberry Pi OS). It boasts an impressive quad-core 1GHz CPU and 512MB of SDRAM. That’s otherworldly from the original Nintendo GBA SP’s single core 16MHz and 384Kb of total ram. This will allow a smooth and fast experience playing retro handheld games, as well as any application I implement. It also supports comes with Bluetooth 4.2 and 2.4GHz Wireless LAN, which will allow easy connection to the device, such as connecting Bluetooth headphones, wirelessly transferring games, automated updates, etc.
+### Overview
+Nostalpi SP is a pocket sized gaming handheld based off the shell design of a Gameboy Advance SP. All software and designs will be open-source. As referenced in its name, the brains behind this device will be a Raspberry Pi, specifically the Pi Zero 2. It is designed to be a fun handheld to play retro games at home and on the go. With a rechargeable battery, compact design, and fast suspending and saving by a simple lid close, it is perfect for the busyness and unpredicability of public spaces. It is fully equipt with WiFi and Bluetooth to connect to the internet and all your favourite Bluetooth devices. A custom PCB will be manufactured to connect the components and provide a platform for the switches.
 
-Nostalpi SP is a pocket sized gaming handheld 
+### Specifications
+CPU: Quad-core 64-bit Arm Cortex-A53 CPU, clocked at 1GHz.
+RAM: 12MB of LPDDR2 SDRAM.
+Power: USB-C charging, battery size to be decided with testing.
+Interface: Full color 2.4" TFT display, semi clicky switches.
+Wireless Connection: 2.4GHz 802.11 b/g/n wireless LAN and Bluetooth 4.2
+Storage: Customisable, as the Pi Zero takes a micro-SD card
+[2]
 
 ### Proposed Diagram
 <img src="images/gamepi_sp_plans_inside.jpg" alt="gba" width="400"/> <img src="images/gamepi_sp_plans_outside.jpg" alt="gba" width="400"/>
 
 Further decoration and polishing will be added to the case to create a refined outcome.
 
-<img src="images/gamepi_sp_final_proposal.jpg" alt="gba" width="500"/>
+<img src="images/gamepi_sp_final_proposal.png" alt="gba" width="500"/>
 
 ## 11. Risks and Mitigations
 ### Risks
@@ -356,3 +361,16 @@ Some ways theses risks can be mitigated are:
 
 
 ## 13. Learnings and Reflections
+
+
+
+
+
+## Sources
+1. http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html
+2. https://www.raspberrypi.com/documentation/computers/raspberry-pi.html
+3. https://docs.arduino.cc/resources/datasheets/ABX00049-datasheet.pdf
+4. https://juiceboxzero.com/
+5. https://github.com/PiSugar/PiSugar/wiki/PiSugar-3-Series
+6. https://www.adafruit.com/product/1944
+7. https://www.adafruit.com/product/2465
